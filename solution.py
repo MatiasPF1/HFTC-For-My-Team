@@ -21,6 +21,10 @@ class StreamProcessor:
         to handle potential cancellations.
         """
         # TODO: Initialize data structures for order tracking and price levels
+        self.orders = {}
+        self.bids={}
+        self.ask={}
+        
         pass
 
     def add_message(self, message: dict) -> None:
@@ -50,6 +54,7 @@ class StreamProcessor:
             - "BUY" messages interact with resting "ASKS".
             - "SELL" messages interact with resting "BIDS".
         """
+        
         # TODO: Implement price-based matching and volume update logic
         pass
 
