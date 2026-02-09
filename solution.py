@@ -21,11 +21,8 @@ class StreamProcessor:
         to handle potential cancellations.
         """
         # TODO: Initialize data structures for order tracking and price levels
-        self.orders = {}
-        self.bids={}
-        self.ask={}
+        self.message={}  
         
-        pass
 
     def add_message(self, message: dict) -> None:
         """
@@ -56,7 +53,7 @@ class StreamProcessor:
         """
         
         # TODO: Implement price-based matching and volume update logic
-        pass
+        
 
     def get_mid_price(self) -> float:
         """
@@ -71,7 +68,8 @@ class StreamProcessor:
                    Returns 0.0 if the book is one-sided or empty.
         """
         # TODO: Implement mid-price calculation
-        pass
+        
+
 
     def get_book_depth(self) -> Dict[str, List[Tuple[float, int]]]:
         """
